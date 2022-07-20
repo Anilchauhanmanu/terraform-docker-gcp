@@ -1,5 +1,5 @@
 variable "gcp_project" {
-    default = "<<NAME OF PROJECT GOES HERE>>"
+    default = "unique-decker-353908"
 }
 
 variable "gcp_region" {
