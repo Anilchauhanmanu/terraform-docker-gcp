@@ -7,7 +7,7 @@ resource "random_id" "instance_id" {
 // A single Google Cloud Engine instance
 resource "google_compute_instance" "default" {
  name         = "gcp-cloud-${random_id.instance_id.hex}"
- machine_type = "f1-micro"
+ machine_type = "n2-standard-4"
  zone         = "${var.gcp_region}"
 
 # tags = ["http-server","https-server"] #uncomment to allow 80 and or 443
